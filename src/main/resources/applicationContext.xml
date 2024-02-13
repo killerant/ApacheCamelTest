@@ -5,7 +5,8 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd
-c       ">
+        http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd
+       ">
     <camelContext xmlns="http://camel.apache.org/schema/spring">
         <route id="wsRoute">
             <from uri="cxf:bean:productServiceEndpoint" />
